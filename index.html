@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="input1">
+    <br>
+    <input type="number" id="input2">
+    <br>
+    <button onclick="onclickhandler()">calculate sum</button>
+    <div id="output"></div>
+
+    <script>
+        function onclickhandler(){
+            const val1= document.getElementById('input1').value
+            const val2= document.getElementById('input2').value
+            console.log(typeof val1,val2);
+              const output= document.getElementById('output');
+              output.innerHTML=val1+val2;
+        }
+    </script>
+</body>
+</html>
